@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Kilomiter to Miles converter</h1>
+        Enter distance in kilomiter: <input type="text" id="f1">
+        <button onclick="mil()">Convert to miles</button><br><br>
+        <p id="s2"></p>
+
+        <script>
+            function mil(){
+                let first = parseInt(document.getElementById("f1").value);
+                let con = first * 0.6214;
+                document.getElementById("s2").innerHTML = "The said Kilomiters in miles is: " + con; 
+            }
+        </script>
+
+    </body>
+    </html>
+</body>
+</html>
